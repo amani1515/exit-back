@@ -29,6 +29,7 @@ class StudentResource extends Resource
                 TextColumn::make('name')->searchable()->sortable(),
                 TextColumn::make('username')->searchable()->sortable(),
                 TextColumn::make('quizcode')->sortable(),
+                TextColumn::make('feedback')->limit(50)->default('-'),
                 TextColumn::make('created_at')->label('Submitted At')->dateTime()->sortable(),
             ])
             ->defaultSort('created_at', 'desc');
