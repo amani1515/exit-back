@@ -12,7 +12,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('username');
-            $table->string('quizcode');
+            $table->string('quizcode')->nullable();
+            $table->text('feedback')->nullable();
             $table->timestamps();
         });
     }

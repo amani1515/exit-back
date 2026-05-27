@@ -28,7 +28,11 @@ class EnrollmentController extends Controller
             'feedback' => 'required|string',
         ]);
 
-        $student = Student::create($data);
+        $student = Student::create([
+            'name'     => $data['name'],
+            'username' => $data['username'],
+            'feedback' => $data['feedback'],
+        ]);
 
         return response()->json(['status' => 'success', 'student' => $student]);
     }
