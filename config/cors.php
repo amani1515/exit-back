@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['https://exam.aviator250.com', 'https://aradabingo.bond'],
+    'allowed_origins' => ['*'],
 
     'allowed_origins_patterns' => [],
 
